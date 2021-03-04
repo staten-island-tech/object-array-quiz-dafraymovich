@@ -16,6 +16,9 @@ const presidents = [
 //Challenge Questions
 //1) Filter all presidents, leaving only the Democratic ones
 
+const democrat = presidents.filter(president => (president.party = 'D')) 
+console.table(democrat);
+
 //2)Filter all presidents to leave only one term Republican presidents HINT use If statement
 
 //3) return only the last three presidents
