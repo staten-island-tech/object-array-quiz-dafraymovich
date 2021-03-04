@@ -29,3 +29,13 @@ console.table(term);
 //4) log all dems who served 2 terms. HINT use chain filter, filter and slice
 
 //BONUS write a script to check if LBJ was a 2 term president. IF he was then alert("LBJ served two terms") else alert "LBJ was one and done"
+
+const LBJ = presidents.filter( function(pres) {
+  if (pres.name == "Lyndon Johnson" && pres.terms == 2) {
+    return true, alert('LBJ served 2 terms');
+  } else {
+    return false, alert('LBJ was one and done')
+  }
+});
+
+console.table(LBJ);
